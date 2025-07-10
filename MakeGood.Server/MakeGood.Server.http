@@ -1,0 +1,6 @@
+@MakeGood.Server_HostAddress = http://localhost:5001
+
+GET {{MakeGood.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
