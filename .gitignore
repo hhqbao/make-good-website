@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/makegood.client/obj/Debug
+/MakeGood.Server/bin/Debug/net8.0
+/MakeGood.Server/obj
