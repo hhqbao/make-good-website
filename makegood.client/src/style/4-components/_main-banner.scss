@@ -1,0 +1,14 @@
+.main-banner-comp {
+  background-repeat: no-repeat;
+  background-image: url("/Images/main-banner.jpg");
+  background-position: center top;
+  background-size: cover;
+  height: 80rem;
+  padding: 15% 0;
+
+  &__text-box {
+    background-color: rgb($black--1, 0.5);
+    display: inline-block;
+    padding: 2rem 5rem;
+  }
+}

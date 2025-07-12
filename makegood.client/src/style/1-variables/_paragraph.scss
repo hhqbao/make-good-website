@@ -1,0 +1,10 @@
+.paragraph {
+  display: block;
+
+  &--1 {
+    color: $white--1;
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-family: "Open Sans";
+  }
+}

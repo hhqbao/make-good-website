@@ -1,0 +1,10 @@
+.heading {
+  display: block;
+
+  &--1 {
+    color: $white--1;
+    font-weight: 800;
+    font-family: "Open Sans";
+    font-size: 5rem;
+  }
+}
