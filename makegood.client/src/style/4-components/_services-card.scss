@@ -1,18 +1,24 @@
 .services-card-comp {
-  margin-top: -5%;
+  margin-top: -6rem;
   position: relative;
   z-index: 20;
 
+  &__container {
+    margin: 0 auto;
+    max-width: 150rem;
+  }
+
   .services-card-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    column-gap: 5rem;
+    display: flex;
     list-style: none;
 
     .services-card-item {
+      animation: slideInBottom 0.5s ease-out;
+      animation-fill-mode: backwards;
       background-color: $white--1;
       border-radius: 1.5rem;
-      box-shadow: 0 0 0.5rem 0.2rem rgba($black--1, 0.19);
+      box-shadow: 0 0 2rem 0.2rem rgba(black, 0.2);
       padding: 3.6rem;
 
       &__icon {
@@ -35,14 +41,22 @@
 
       &__heading {
         text-align: center;
-        margin-bottom: 0.9rem;
+        margin-bottom: 4rem;
       }
 
       &__description {
-        text-align: center;
+        text-align: justify;
         margin-bottom: 2.4rem;
       }
+
       &__footer {
+      }
+
+      $cardItems: 5;
+      @for $i from 0 to $cardItems {
+        &:nth-child(#{$i + 1}) {
+          animation-delay: calc(0.25s * $i);
+        }
       }
     }
   }
