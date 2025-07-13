@@ -1,0 +1,49 @@
+.services-card-comp {
+  margin-top: -5%;
+  position: relative;
+  z-index: 20;
+
+  .services-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    list-style: none;
+
+    .services-card-item {
+      background-color: $white--1;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 1rem 0.2rem rgba($black--1, 0.19);
+      padding: 3.6rem;
+
+      &__icon {
+        display: flex;
+        font-size: 5rem;
+        justify-content: center;
+        margin-bottom: 2.4rem;
+
+        .fa-screwdriver-wrench {
+          color: #d50000;
+        }
+
+        .fa-virus {
+          color: #70c370;
+        }
+
+        .fa-puzzle-piece {
+        }
+      }
+
+      &__heading {
+        text-align: center;
+        margin-bottom: 0.9rem;
+      }
+
+      &__description {
+        text-align: center;
+        margin-bottom: 2.4rem;
+      }
+      &__footer {
+      }
+    }
+  }
+}
