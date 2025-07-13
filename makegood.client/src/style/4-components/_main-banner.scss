@@ -1,13 +1,61 @@
 .main-banner-comp {
   background-repeat: no-repeat;
-  background-image: url("/images/main-banner.jpg");
+  background-image: url("/images/main-banner.webp");
   background-position: center bottom;
   background-size: cover;
-  padding: 5% 0 15% 0;
+  height: 70vh;
+  position: relative;
+
+  &__container {
+    align-items: center;
+    background: linear-gradient(
+      90deg,
+      rgba(black, 0.6) 0%,
+      rgba(white, 0) 50%,
+      rgba(black, 0.6) 100%
+    );
+    color: $white--1;
+    display: flex;
+    inset: 0;
+    position: absolute;
+  }
 
   &__text-box {
+    animation: slideInTop 0.5s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.2s;
     background-color: rgba(black, 0.5);
+    border-radius: 0.5rem;
     display: inline-block;
-    padding: 2rem 5rem 3.3rem 5rem;
+    margin-top: -15vh;
+    max-width: 62%;
+    padding: 4rem;
+    line-height: 1;
+
+    .banner-heading {
+      margin-bottom: 2rem;
+
+      &__main {
+        font-size: 5rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+      }
+
+      &__sub {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+    }
+
+    .banner-paragraph {
+      font-size: 2rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .banner-footer {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+    }
   }
 }
