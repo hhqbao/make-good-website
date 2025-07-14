@@ -17,7 +17,7 @@
       animation: slideInBottom 0.5s ease-out;
       animation-fill-mode: backwards;
       background-color: $white--1;
-      border-radius: 1.5rem;
+      border-radius: 1rem;
       box-shadow: 0 0 2rem 0.2rem rgba(black, 0.2);
       padding: 3.6rem;
 
@@ -40,12 +40,47 @@
       }
 
       &__heading {
+        position: relative;
         text-align: center;
         margin-bottom: 4rem;
+
+        &::after {
+          background-color: $blue--2;
+          content: "";
+          display: block;
+          height: 3px;
+          left: 50%;
+          position: absolute;
+          top: calc(100% + 5px);
+          transform: translateX(-50%);
+          width: 40%;
+        }
+      }
+
+      &__img-box {
+        border: solid 2px $blue--1;
+        height: 25vh;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        position: relative;
+
+        & > a {
+          display: contents;
+
+          & > img {
+            display: block;
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
       }
 
       &__description {
-        text-align: justify;
+        text-align: center;
         margin-bottom: 2.4rem;
       }
 

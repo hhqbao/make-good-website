@@ -20,8 +20,10 @@
   }
 
   &--2 {
-    border: 0.2rem solid rgba($blue--1, 1);
-    color: rgba($blue--1, 1);
+    border-radius: 0.3rem;
+    border: 0.2rem solid $blue--1;
+    background-color: $blue--1;
+    color: $white--1;
     font-size: 1.7rem;
     text-align: center;
     padding: 1rem 0;
@@ -29,8 +31,8 @@
     width: 100%;
 
     &:hover {
-      background-color: rgba($blue--1, 1);
-      color: white;
+      background-color: $white--1;
+      color: $blue--1;
     }
   }
 }
