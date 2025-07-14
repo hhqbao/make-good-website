@@ -3,11 +3,14 @@
   margin-top: 12rem;
 
   &__text-container {
+    align-items: center;
+    background-color: $white--3;
+    display: flex;
     flex: 1;
+    justify-content: center;
 
     .services-text-box {
-      background-color: $white--3;
-      padding: 15.8475rem 11rem;
+      width: 77%;
 
       &__heading {
         margin-bottom: 1.8rem;
