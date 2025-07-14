@@ -1,0 +1,35 @@
+.services-banner-comp {
+  display: flex;
+  margin-top: 12rem;
+
+  &__text-container {
+    flex: 1;
+
+    .services-text-box {
+      background-color: $white--3;
+      padding: 15.8475rem 11rem;
+
+      &__heading {
+        margin-bottom: 1.8rem;
+        line-height: 1;
+      }
+
+      &__sub-heading {
+        margin-bottom: 1.8rem;
+      }
+
+      .bold {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__image-container {
+    &__item {
+      height: 100%;
+      width: 100%;
+    }
+
+    flex: 1;
+  }
+}

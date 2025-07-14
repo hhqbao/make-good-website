@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainBannerComponent } from './main-banner/main-banner.component';
 import { ServicesCardComponent } from './services-card/services-card.component';
+import { ServicesBannerComponent } from './services-banner/services-banner.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { ServicesCardComponent } from './services-card/services-card.component';
     AppRoutingModule,
     MainBannerComponent,
     ServicesCardComponent,
+    ServicesBannerComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],
