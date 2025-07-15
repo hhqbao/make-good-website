@@ -26,9 +26,8 @@
     color: $white--1;
     font-size: 1.7rem;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     transition: all 0.2s ease-out;
-    width: 100%;
 
     &:hover {
       background-color: $white--1;
@@ -42,9 +41,23 @@
     color: $white--1;
     font-size: 1.9rem;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
     transition: all 0.2s ease-out;
-    width: 100%;
+
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba(black, 0.4);
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  &--4 {
+    border-radius: 0.3rem;
+    background-color: $red--1;
+    color: $white--1;
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    transition: all 0.2s ease-out;
 
     &:hover {
       box-shadow: 0 1rem 2rem rgba(black, 0.4);

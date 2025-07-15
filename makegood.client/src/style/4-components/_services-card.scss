@@ -83,6 +83,11 @@
       }
 
       &__footer {
+        display: flex;
+
+        * {
+          flex: 1;
+        }
       }
 
       $cardItems: 5;
