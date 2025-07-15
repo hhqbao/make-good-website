@@ -1,0 +1,26 @@
+<div class="image-compare-comp">
+  <div #sliderContainer class="image-compare-comp__container">
+    <img
+      [src]="beforeUrl"
+      class="image-compare-comp__image image-compare-comp__image--before"
+      [ngStyle]="{ 'clip-path': getClipPathValue('before') }"
+    />
+    <img
+      [src]="afterUrl"
+      class="image-compare-comp__image image-compare-comp__image--after"
+      [ngStyle]="{ 'clip-path': getClipPathValue('after') }"
+    />
+
+    <div
+      class="image-compare-comp__slider"
+      [ngStyle]="{ left: sliderPosition + '%' }"
+    >
+      <div
+        class="image-compare-comp__slider__handle"
+        (mousedown)="onClickOnHandle($event)"
+      >
+        <i class="fa-solid fa-arrows-left-right"></i>
+      </div>
+    </div>
+  </div>
+</div>

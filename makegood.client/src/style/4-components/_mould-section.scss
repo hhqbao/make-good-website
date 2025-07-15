@@ -1,0 +1,67 @@
+.mould-section {
+  padding: 8rem 0;
+
+  &__container {
+    .treatment-list {
+      display: grid;
+      gap: 5rem;
+      grid-template-columns: repeat(2, 1fr);
+      list-style: none;
+      margin-top: 6.5rem;
+
+      &__item {
+        box-shadow: 0 0 2rem rgba(black, 0.5);
+        height: 50rem;
+      }
+    }
+  }
+
+  &__text-box {
+    padding: 0 5rem;
+  }
+
+  &__logo-box {
+    padding: 3rem 0;
+    position: relative;
+    text-align: center;
+
+    &__logo {
+      display: inline-block;
+      height: 14rem;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &::after {
+      background-color: rgba($black--2, 0.5);
+      height: 2px;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      width: 30%;
+      z-index: 1;
+    }
+
+    &::before {
+      border-radius: 2px;
+      background-color: $green--2;
+      height: 6px;
+      left: 50%;
+      top: calc(100% - 2px);
+      transform: translateX(-50%);
+      width: 10%;
+      z-index: 2;
+    }
+  }
+
+  &__description {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+}

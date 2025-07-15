@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "makegood.client\\makegood.client.esproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MakeGood.Server\\MakeGood.Server.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]
