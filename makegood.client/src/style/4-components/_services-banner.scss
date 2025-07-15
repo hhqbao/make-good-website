@@ -2,12 +2,13 @@
   display: flex;
   margin-top: 12rem;
 
-  &__text-container {
+  &__content-box {
     align-items: center;
     background-color: $white--3;
     display: flex;
     flex: 1;
     justify-content: center;
+    padding: 25rem 0;
 
     .services-text-box {
       width: 77%;
@@ -27,12 +28,18 @@
     }
   }
 
-  &__image-container {
+  &__img-box {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+
     &__item {
       height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
       width: 100%;
     }
-
-    flex: 1;
   }
 }
