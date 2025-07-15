@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/jquery": "^3.5.32",
+    "@types/slick-carousel": "^1.6.40",
+    "jquery": "^3.7.1",
+    "ngx-slick-carousel": "^19.0.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

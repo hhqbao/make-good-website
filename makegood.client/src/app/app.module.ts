@@ -11,6 +11,7 @@ import { ServicesCardComponent } from './components/services-card/services-card.
 import { ServicesBannerComponent } from './components/services-banner/services-banner.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { SloganPanelComponent } from './components/slogan-panel/slogan-panel.component';
+import { OurWorksComponent } from './components/our-works/our-works.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { SloganPanelComponent } from './components/slogan-panel/slogan-panel.com
     ServicesBannerComponent,
     TopNavComponent,
     SloganPanelComponent,
+    OurWorksComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],

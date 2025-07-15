@@ -34,8 +34,15 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/style/main.scss"],
-            "scripts": []
+            "styles": [
+              "src/style/main.scss",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
+            ]
           },
           "configurations": {
             "production": {

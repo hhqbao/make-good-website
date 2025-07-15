@@ -1,0 +1,16 @@
+.our-works-comp {
+  margin-top: 4rem;
+
+  &__text-box {
+    text-align: center;
+
+    &__heading {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    &__sub-heading {
+      font-size: 2rem;
+    }
+  }
+}
