@@ -1,0 +1,70 @@
+.footer-comp {
+  background-color: $gray--2;
+  padding: 6rem 0 2rem 0;
+
+  &__container {
+  }
+
+  &__top-box {
+    display: flex;
+
+    &__left-text-box {
+      flex: 1.4;
+
+      &__heading {
+        color: $white--1;
+      }
+
+      &__list {
+        margin-top: 1.8rem;
+        list-style: none;
+      }
+
+      &__item {
+        display: block;
+        color: $green--1;
+        margin: 1.2rem 0;
+      }
+    }
+
+    &__right-text-box {
+      flex: 1;
+
+      &__heading {
+        color: $white--1;
+        margin-bottom: 2rem;
+      }
+
+      &__description {
+        line-height: 1.6;
+      }
+
+      &__button {
+        margin-top: 3.6rem;
+        width: 35%;
+      }
+    }
+  }
+
+  &__bottom-box {
+    margin-top: 7rem;
+
+    &__left-text-box {
+      display: flex;
+
+      &__logo {
+        height: 9rem;
+      }
+
+      &__description {
+        align-items: center;
+        display: flex;
+        margin-left: 1.2475rem;
+      }
+    }
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+}
