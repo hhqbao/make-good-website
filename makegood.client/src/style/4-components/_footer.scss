@@ -8,26 +8,26 @@
   &__top-box {
     display: flex;
 
-    &__left-text-box {
+    .left-box {
       flex: 1.4;
 
       &__heading {
         color: $white--1;
       }
 
-      &__list {
+      .footer-menu {
         margin-top: 1.8rem;
         list-style: none;
-      }
 
-      &__item {
-        display: block;
-        color: $green--1;
-        margin: 1.2rem 0;
+        &__item {
+          display: block;
+          color: $green--1;
+          margin: 1.2rem 0;
+        }
       }
     }
 
-    &__right-text-box {
+    .right-box {
       flex: 1;
 
       &__heading {
@@ -47,24 +47,7 @@
   }
 
   &__bottom-box {
+    color: $white--1;
     margin-top: 7rem;
-
-    &__left-text-box {
-      display: flex;
-
-      &__logo {
-        height: 9rem;
-      }
-
-      &__description {
-        align-items: center;
-        display: flex;
-        margin-left: 1.2475rem;
-      }
-    }
-  }
-
-  .bold {
-    font-weight: 700;
   }
 }
