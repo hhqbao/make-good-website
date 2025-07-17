@@ -62,18 +62,14 @@
         overflow: hidden;
         position: relative;
 
-        & > a {
-          display: contents;
-
-          & > img {
-            display: block;
-            height: 100%;
-            left: 0;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            width: 100%;
-          }
+        & > img {
+          display: block;
+          height: 100%;
+          left: 0;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          width: 100%;
         }
       }
 
