@@ -1,0 +1,112 @@
+.contact-section {
+  margin: 6rem 0 12rem 0;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__header,
+  &__thank-box {
+    margin-bottom: 6rem;
+
+    & > .heading {
+      color: $red--1;
+      margin-bottom: 1.5rem;
+    }
+
+    & > .paragraph {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__thank-box {
+    margin-top: 10rem;
+  }
+
+  &__methods {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+
+    .method {
+      &__icon {
+        font-size: 4rem;
+      }
+
+      &__title {
+        font-size: 2.8rem;
+        margin: 1.8rem 0;
+      }
+
+      & > .paragraph {
+        &:not(:last-child) {
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 78.125em) {
+      padding: 0 2rem;
+    }
+
+    @media screen and (max-width: $break--4) {
+      column-gap: 0;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 5rem;
+    }
+  }
+
+  .contact-form {
+    margin-top: 5rem;
+    text-align: left;
+
+    &__container {
+      margin: 0 auto;
+      max-width: 50%;
+    }
+
+    &__header {
+      & > .heading {
+        color: $red--1;
+      }
+
+      & > .paragraph {
+        margin-top: 0.5rem;
+      }
+    }
+
+    &__body {
+      margin-top: 2rem;
+    }
+
+    @media screen and (max-width: $break--3) {
+      padding: 0 3rem;
+
+      &__container {
+        margin: 0;
+        max-width: unset;
+      }
+
+      &__header {
+        text-align: center;
+
+        & > .heading {
+          font-size: 3rem;
+        }
+
+        & > .paragraph {
+          margin-top: 0.5rem;
+        }
+      }
+
+      &__body {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: $break--3) {
+    margin: 5rem 0;
+  }
+}

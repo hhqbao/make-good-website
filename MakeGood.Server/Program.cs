@@ -1,11 +1,22 @@
+using MakeGood.Server.Services;
+using Newtonsoft.Json;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson(opt =>
+{
+    opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+    opt.SerializerSettings.TypeNameHandling = TypeNameHandling.Auto;
+});
+builder.Services.AddCors();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<EmailService, EmailService>();
 
 var app = builder.Build();
 
@@ -24,6 +35,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors(x => { x.WithOrigins("https://localhost:5000", "https://makegoodteamservices.com.au", "https://www.makegoodteamservices.com.au").AllowAnyHeader().AllowAnyMethod(); });
 
 app.MapFallbackToFile("/index.html");
 

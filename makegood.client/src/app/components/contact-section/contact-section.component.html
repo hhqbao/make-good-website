@@ -1,0 +1,161 @@
+<div id="contact-section" class="contact-section" *ngIf="isInitialized">
+  <div class="container container--2">
+    <div class="contact-section__container">
+      <div class="contact-section__header">
+        <h2 class="heading heading--2">Contact</h2>
+        <p class="paragraph paragraph--1">
+          Have questions or need our dynabolt removal service?
+        </p>
+        <p class="paragraph paragraph--1">
+          <button
+            type="button"
+            class="btn btn--2"
+            onclick="Chatra('openChat', true)"
+          >
+            Chat with us!
+          </button>
+        </p>
+      </div>
+      <ul class="contact-section__methods">
+        <li *ngFor="let item of methods" class="method">
+          <h2 class="heading heading--2 method__icon">
+            <i [className]="item.iconClass"></i>
+          </h2>
+          <h2 class="heading heading--2 method__title">{{ item.title }}</h2>
+          <p *ngFor="let note of item.notes" class="paragraph paragraph--1">
+            {{ note }}
+          </p>
+        </li>
+      </ul>
+      <div *ngIf="submissionDone" class="contact-section__thank-box">
+        <h2 class="heading heading--2">Submission Complete</h2>
+        <p class="paragraph paragraph--1">
+          Thank you for reaching out! Our team will contact you as soon as
+          possible.
+        </p>
+      </div>
+      <div *ngIf="!submissionDone" class="contact-form">
+        <div class="contact-form__container">
+          <div class="contact-form__header">
+            <h3 class="heading heading--3">Contact Form</h3>
+            <p class="paragraph paragraph--1">
+              Please complete the form below for any questions you have.
+            </p>
+          </div>
+          <div class="contact-form__body">
+            <form
+              class="form"
+              [formGroup]="enquiryForm"
+              (submit)="onEnquiryFormSubmit()"
+            >
+              <div
+                *ngIf="enquiryFormSubmitted && enquiryForm.invalid"
+                class="form__error-panel"
+              >
+                <i class="fa-solid fa-circle-exclamation"></i>
+                There was a problem with your submission. Please review the
+                fields below.
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__control"
+                  placeholder="Name*"
+                  formControlName="name"
+                />
+                <label
+                  *ngIf="enquiryFormSubmitted && enquiryForm.name.invalid"
+                  class="form__error-label"
+                >
+                  This field is required.
+                </label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__control"
+                  placeholder="Email*"
+                  formControlName="email"
+                />
+                <label
+                  *ngIf="enquiryFormSubmitted && enquiryForm.email.invalid"
+                  class="form__error-label"
+                >
+                  <span *ngIf="enquiryForm.email.errors['required']">
+                    This field is required
+                  </span>
+                  <span
+                    *ngIf="
+                      !enquiryForm.email.errors['required'] &&
+                      enquiryForm.email.errors['pattern']
+                    "
+                  >
+                    Invalid email format
+                  </span>
+                </label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  inputmode="tel"
+                  class="form__control"
+                  placeholder="Phone*"
+                  formControlName="phone"
+                />
+                <label
+                  *ngIf="enquiryFormSubmitted && enquiryForm.phone.invalid"
+                  class="form__error-label"
+                >
+                  <span *ngIf="enquiryForm.phone.errors['required']">
+                    This field is required
+                  </span>
+                </label>
+              </div>
+              <div class="form__group">
+                <textarea
+                  class="form__control"
+                  placeholder="Message*"
+                  rows="4"
+                  formControlName="message"
+                ></textarea>
+                <label
+                  *ngIf="enquiryFormSubmitted && enquiryForm.message.invalid"
+                  class="form__error-label"
+                >
+                  This field is required.
+                </label>
+              </div>
+              <div class="form__group">
+                <div class="form__captcha-box">
+                  <re-captcha
+                    #captcha
+                    (resolved)="onCaptchaResolved($event)"
+                    siteKey="6LcvmkcqAAAAANQ1QG2s61xvfZzP13uY0nrYCu1S"
+                  ></re-captcha>
+                </div>
+                <label
+                  *ngIf="enquiryFormSubmitted && enquiryForm.captcha.invalid"
+                  class="form__error-label"
+                >
+                  Please prove that you are not a robot.
+                </label>
+              </div>
+              <div class="form__group">
+                <button
+                  type="submit"
+                  class="btn btn--2"
+                  [disabled]="isSubmitting || enquiryForm.invalid"
+                >
+                  <span *ngIf="!isSubmitting">Submit</span>
+                  <span *ngIf="isSubmitting">
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

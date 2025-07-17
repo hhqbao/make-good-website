@@ -26,6 +26,11 @@
     &__logo-box {
       align-items: center;
       display: flex;
+
+      & > img {
+        display: block;
+        height: 1rem;
+      }
     }
 
     &__menu-box {

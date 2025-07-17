@@ -14,6 +14,7 @@ import { SloganPanelComponent } from './components/slogan-panel/slogan-panel.com
 import { FooterComponent } from './components/footer/footer.component';
 import { MouldSectionComponent } from './components/mould-section/mould-section.component';
 import { MakeGoodComponent } from './components/make-good/make-good.component';
+import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +28,7 @@ import { MakeGoodComponent } from './components/make-good/make-good.component';
     SloganPanelComponent,
     MouldSectionComponent,
     FooterComponent,
+    ContactSectionComponent,
     MakeGoodComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],

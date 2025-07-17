@@ -1,0 +1,23 @@
+[
+  {
+    "iconClass": "fa-solid fa-envelope",
+    "title": "Email",
+    "notes": [
+      "Fill out the form below or reach out to us via email.",
+      "admin@makegoodteamservices.com.au"
+    ]
+  },
+  {
+    "iconClass": "fa-solid fa-phone",
+    "title": "Phone",
+    "notes": ["We look forward to hearing from you!", "0425 987 111"]
+  },
+  {
+    "iconClass": "fa-solid fa-map",
+    "title": "Aus Wide",
+    "notes": [
+      "Business Hours: Monday - Friday, 9:00 AM - 5:00 PM",
+      "We cover Australia Wide"
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+.form {
+  &__error-panel {
+    border-radius: 0.5rem;
+    background-color: $red--2;
+    border: solid 1px rgba($black--1, 0.1);
+    box-shadow: 0 0 1rem rgba($black--1, 0.1);
+    color: $red--1;
+    padding: 1.5rem 2.2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__captcha-box {
+    transform-origin: left center;
+
+    @media screen and (max-width: $break--4) {
+      transform: scale(0.8);
+    }
+  }
+
+  &__control {
+    border: solid 1px rgba($black--1, 0.7);
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.2rem 1rem;
+    width: 100%;
+
+    &::placeholder {
+      opacity: 0.7;
+    }
+  }
+
+  &__error-label {
+    color: $red--1;
+    display: block;
+    font-size: 1.5rem;
+
+    &:not(:first-child) {
+      margin-top: 0.5rem;
+    }
+  }
+}
