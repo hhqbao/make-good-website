@@ -13,6 +13,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { SloganPanelComponent } from './components/slogan-panel/slogan-panel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MouldSectionComponent } from './components/mould-section/mould-section.component';
+import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { MouldSectionComponent } from './components/mould-section/mould-section.
     SloganPanelComponent,
     MouldSectionComponent,
     FooterComponent,
+    ContactSectionComponent,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],

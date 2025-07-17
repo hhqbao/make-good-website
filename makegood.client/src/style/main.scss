@@ -1,4 +1,5 @@
 @import "1-variables/colors";
+@import "1-variables/break-points";
 @import "3-bases/base";
 @import "3-bases/animations";
 @import "3-bases/helpers";
@@ -13,4 +14,6 @@
 @import "4-components/services-banner";
 @import "4-components/slogan-panel";
 @import "4-components/footer";
+@import "4-components/form";
+@import "4-components/contact-section";
 @import "4-components/mould-section";
