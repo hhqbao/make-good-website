@@ -1,10 +1,10 @@
 .make-good-comp {
   background-color: $white--3;
-  padding: 8.2rem 0;
+  padding: 8.2rem 0 15rem 0;
 
   &__top-box {
     .text-box {
-      padding: 0 30rem;
+      padding: 0 25rem;
       text-align: center;
 
       &__heading {
@@ -24,26 +24,27 @@
     .services-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2.4rem;
+      gap: 3rem;
       list-style: none;
 
       .services-item {
-        box-shadow: 0 4px 6px 1px rgba(black, 0.3);
-        height: 32.3rem;
+        box-shadow: 0 0 2rem rgba(black, 0.4);
+        height: 33rem;
         position: relative;
         transition: all 0.2s ease-out;
 
         &__bg-image {
           height: 100%;
+          object-fit: cover;
           width: 100%;
         }
 
-        &__text-box {
+        .text-box {
           bottom: 0;
-          position: absolute;
           background-color: rgba(black, 0.5);
-          height: 45%;
+          height: 35%;
           left: 0;
+          position: absolute;
           padding: 2.4rem;
           width: 100%;
           z-index: 5;
