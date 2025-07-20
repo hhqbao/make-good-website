@@ -26,6 +26,6 @@
 
 	<ItemGroup>
 		<Folder Include="Controllers\" />
-		<Content Include="EmailTemplates\**" CopyToPublishDirectory="PreserveNewest" />
+		<Content Include="EmailTemplates\**" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
 	</ItemGroup>
 </Project>
