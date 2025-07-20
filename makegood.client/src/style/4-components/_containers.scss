@@ -3,9 +3,17 @@
 
   &--1 {
     max-width: 117rem;
+
+    @media screen and (max-width: 73.125em) {
+      padding: 0 3rem;
+    }
   }
 
   &--2 {
     max-width: 150rem;
+
+    @media screen and (max-width: 93.75em) {
+      padding: 0 3rem;
+    }
   }
 }

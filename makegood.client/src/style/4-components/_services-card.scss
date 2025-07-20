@@ -3,13 +3,11 @@
   position: relative;
   z-index: 20;
 
-  &__container {
-  }
-
   .services-card-list {
     column-gap: 5rem;
     display: flex;
     list-style: none;
+    padding: 0 3rem;
 
     .services-card-item {
       animation: slideInBottom 0.5s ease-out;
@@ -90,6 +88,40 @@
       @for $i from 0 to $cardItems {
         &:nth-child(#{$i + 1}) {
           animation-delay: calc(0.25s * $i);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $break--1) {
+    .services-card-list {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: $break--3) {
+    .services-card-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5rem;
+
+      .services-card-item {
+        &__img-box {
+          border: solid 2px $blue--1;
+          height: 60vw;
+          margin-bottom: 1.5rem;
+          overflow: hidden;
+          position: relative;
+
+          & > img {
+            display: block;
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
         }
       }
     }

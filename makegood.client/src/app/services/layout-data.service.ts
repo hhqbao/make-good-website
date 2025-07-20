@@ -11,6 +11,8 @@ import { ContactMethod } from '../models/layouts/ContactMethod';
 export class LayoutDataService {
   private http = inject(HttpClient);
 
+  openMobileMenu = false;
+
   getSlogansAsync = async (): Promise<Slogan[]> => {
     return await lastValueFrom(
       this.http

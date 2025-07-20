@@ -17,6 +17,7 @@
     >
       <div
         class="image-compare-comp__slider__handle"
+        (touchstart)="onClickOnHandle($event)"
         (mousedown)="onClickOnHandle($event)"
       >
         <i class="fa-solid fa-arrows-left-right"></i>

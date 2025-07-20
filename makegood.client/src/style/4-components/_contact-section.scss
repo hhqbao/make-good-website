@@ -17,6 +17,13 @@
     & > .paragraph {
       margin-bottom: 2.5rem;
     }
+
+    @media screen and (max-width: $break--3) {
+      & > .heading {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   &__thank-box {
@@ -50,7 +57,7 @@
       padding: 0 2rem;
     }
 
-    @media screen and (max-width: $break--4) {
+    @media screen and (max-width: $break--3) {
       column-gap: 0;
       grid-template-columns: repeat(1, 1fr);
       row-gap: 5rem;
@@ -81,8 +88,6 @@
     }
 
     @media screen and (max-width: $break--3) {
-      padding: 0 3rem;
-
       &__container {
         margin: 0;
         max-width: unset;

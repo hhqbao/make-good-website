@@ -35,12 +35,13 @@ export class ImageCompareComponent implements OnInit {
     return `polygon(${position} 0, 100% 0, 100% 100%, ${position} 100%)`;
   };
 
-  onClickOnHandle = (event: MouseEvent) => {
+  onClickOnHandle = (event: MouseEvent | TouchEvent) => {
     this.isDragging = true;
   };
 
+  @HostListener('document:touchend', ['$event'])
   @HostListener('document:mouseup', ['$event'])
-  onMouseUpDocument = (event: MouseEvent) => {
+  onMouseUpDocument = (event: MouseEvent | TouchEvent) => {
     this.isDragging = false;
   };
 
@@ -48,11 +49,22 @@ export class ImageCompareComponent implements OnInit {
   onMouseMoveDocument = (event: MouseEvent) => {
     if (!this.isDragging) return;
 
+    this.moveSlider(event.clientX);
+  };
+
+  @HostListener('document:touchmove', ['$event'])
+  onTouchMoveDocument = (event: TouchEvent) => {
+    if (!this.isDragging) return;
+
+    this.moveSlider(event.touches[0].clientX);
+  };
+
+  private moveSlider = (clientX: number) => {
     const containerHtml = this.sliderContainer.nativeElement as HTMLDivElement;
 
     const box = containerHtml.getBoundingClientRect();
 
-    const mouseX = Math.min(event.clientX - box.left, box.width);
+    const mouseX = Math.min(clientX - box.left, box.width);
 
     if (mouseX <= 0) this.sliderPosition = 0;
     else this.sliderPosition = (mouseX / box.width) * 100;

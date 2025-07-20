@@ -1,55 +1,70 @@
-<nav class="top-nav">
-  <div class="nav-header">
-    <div class="container container--1">
-      <div class="nav-header__contact-details">
-        <span> Make Good Team Services </span>
-        <span>
-          <i class="fa-solid fa-phone"></i>
-          0425 987 111
-        </span>
+<div class="nav-header">
+  <div class="container container--1">
+    <div class="nav-header__contact-details">
+      <span> Make Good Team Services </span>
+      <span>
+        <i class="fa-solid fa-phone"></i>
+        0425 987 111
+      </span>
+    </div>
+  </div>
+</div>
+<div class="nav-body">
+  <div class="container container--1">
+    <div class="nav-body__container">
+      <div class="nav-body__logo-box">
+        <img
+          src="/images/logos/make-good-logo.png"
+          alt="Make Good Team Services Logo"
+        />
+      </div>
+      <div class="nav-body__menu-box">
+        <ul
+          class="nav-menu"
+          [ngClass]="{ visiable: layoutService.openMobileMenu }"
+        >
+          <li class="nav-menu__item">
+            <a class="active" href="#">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#">
+              <span>Services <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a href="#dynabolt-removal" (click)="onLinkClick()"
+                  >Dynabolt Removal</a
+                >
+              </li>
+              <li class="sub-menu__item">
+                <a href="#mould-remediation" (click)="onLinkClick()"
+                  >Mould Remediation</a
+                >
+              </li>
+              <li class="sub-menu__item">
+                <a href="#general-make-good" (click)="onLinkClick()"
+                  >General Make Goods</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#contact-section">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="nav-body__toggle-btn btn"
+          [ngClass]="{ isOpen: layoutService.openMobileMenu }"
+          (click)="layoutService.openMobileMenu = !layoutService.openMobileMenu"
+        >
+          Menu
+        </button>
       </div>
     </div>
   </div>
-  <div class="nav-body">
-    <div class="container container--1">
-      <div class="nav-body__container">
-        <div class="nav-body__logo-box">
-          <img
-            src="/images/logos/make-good-logo.png"
-            alt="Make Good Team Services Logo"
-          />
-        </div>
-        <div class="nav-body__menu-box">
-          <ul class="nav-menu">
-            <li class="nav-menu__item">
-              <a class="active" href="#">
-                <span>Home</span>
-              </a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#">
-                <span>Services <i class="fa-solid fa-chevron-down"></i></span>
-              </a>
-              <ul class="sub-menu">
-                <li class="sub-menu__item">
-                  <a href="#dynabolt-removal">Dynabolt Removal</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#mould-remediation">Mould Remediation</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#general-make-good">General Make Goods</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#contact-section">
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+</div>

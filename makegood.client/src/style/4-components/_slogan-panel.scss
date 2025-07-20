@@ -34,4 +34,36 @@
     font-size: 2rem;
     line-height: 1.5;
   }
+
+  @media screen and (max-width: $break--4) {
+    &__container {
+      row-gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      margin-top: 6rem;
+      padding: 3rem;
+
+      .left-box {
+        flex: 1;
+        text-align: center;
+      }
+
+      .right-box {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+    }
+
+    &__heading {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+      font-size: 1.8rem;
+      line-height: 1.5;
+    }
+  }
 }
