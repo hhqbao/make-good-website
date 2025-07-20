@@ -6,3 +6,6 @@
 /makegood.client/obj/Debug
 /MakeGood.Server/bin/Debug/net8.0
 /MakeGood.Server/obj
+/makegood.client/obj/Release
+/MakeGood.Server/.config
+/MakeGood.Server/bin/Release/net8.0
