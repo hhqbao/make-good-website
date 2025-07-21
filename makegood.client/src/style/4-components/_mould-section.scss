@@ -66,6 +66,11 @@
     text-align: center;
   }
 
+  &__footer {
+    margin-top: 7rem;
+    text-align: center;
+  }
+
   @media screen and (max-width: $break--3) {
     padding: 5rem 0;
 
