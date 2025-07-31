@@ -15,91 +15,13 @@
     </div>
     <div class="make-good-comp__bottom-box">
       <ul class="services-list">
-        <li class="services-item">
-          <img
-            src="/images/make-good-images/brick-cleaning.webp"
-            alt="01"
-            class="services-item__bg-image"
-          />
-          <div class="text-box">
-            <h3 class="text-box__heading heading heading--1">Brick Cleaning</h3>
-            <p class="text-box__description paragraph paragraph--2">
-              Restorative, Thorough, Specialized, Surface-safe
-            </p>
-          </div>
-        </li>
-        <li class="services-item">
-          <img
-            src="/images/make-good-images/pressure-cleaning.webp"
-            alt="01"
-            class="services-item__bg-image"
-          />
-          <div class="text-box">
-            <h3 class="text-box__heading heading heading--1">
-              Pressure Cleaning
-            </h3>
-            <p class="text-box__description paragraph paragraph--2">
-              Driveway, garages, handover cleaning
-            </p>
-          </div>
-        </li>
-        <li class="services-item">
-          <img
-            src="/images/make-good-images/nawkaw.webp"
-            alt="01"
-            class="services-item__bg-image"
-          />
-          <div class="text-box">
-            <h3 class="text-box__heading heading heading--1">NawKaw</h3>
-            <p class="text-box__description paragraph paragraph--2">
-              Fixing bricks and morta colour
-            </p>
-          </div>
-        </li>
-        <li class="services-item">
-          <img
-            src="/images/make-good-images/window-cleaning.webp"
-            alt="01"
-            class="services-item__bg-image"
-          />
-          <div class="text-box">
-            <h3 class="text-box__heading heading heading--1">
-              Windows Scratches Removal
-            </h3>
-            <p class="text-box__description paragraph paragraph--2">
-              Precise, Clear, Professional, Damage-free
-            </p>
-          </div>
-        </li>
-        <li class="services-item">
-          <img
-            src="/images/make-good-images/frame-treatment.webp"
-            alt="01"
-            class="services-item__bg-image"
-          />
-          <div class="text-box">
-            <h3 class="text-box__heading heading heading--1">
-              Wooden Frames treatments
-            </h3>
-            <p class="text-box__description paragraph paragraph--2">
-              Protective, Restorative, Polished, Durable
-            </p>
-          </div>
-        </li>
-        <li class="services-item">
-          <img
-            src="/images/make-good-images/steel-polishing.webp"
-            alt="01"
-            class="services-item__bg-image"
-          />
-          <div class="text-box">
-            <h3 class="text-box__heading heading heading--1">
-              Stainless Steel Polishing
-            </h3>
-            <p class="text-box__description paragraph paragraph--2">
-              Doors handles, sinks, etc.
-            </p>
-          </div>
+        <li class="services-item" *ngFor="let item of ourServices">
+          <app-service-item-card
+            [imgUrl]="item.imgUrl"
+            [heading]="item.heading"
+          >
+            {{ item.description }}
+          </app-service-item-card>
         </li>
       </ul>
     </div>

@@ -14,6 +14,7 @@
 
       &__description {
         font-size: 2rem;
+        line-height: 1.6;
       }
     }
   }
@@ -29,35 +30,7 @@
 
       .services-item {
         box-shadow: 0 0 2rem rgba(black, 0.4);
-        height: 33rem;
-        position: relative;
         transition: all 0.2s ease-out;
-
-        &__bg-image {
-          height: 100%;
-          object-fit: cover;
-          width: 100%;
-        }
-
-        .text-box {
-          bottom: 0;
-          background-color: rgba(black, 0.5);
-          height: 35%;
-          left: 0;
-          position: absolute;
-          padding: 2.4rem;
-          width: 100%;
-          z-index: 5;
-
-          &__heading {
-            color: $white--1;
-            font-size: 2.5rem;
-            margin-bottom: 1.2rem;
-          }
-
-          &__description {
-          }
-        }
 
         &:hover {
           box-shadow: 0 10px 12px 2px rgba(0, 0, 0, 0.3);
