@@ -2,41 +2,93 @@
   {
     "heading": "Profressional Dynabolt Removal",
     "description": "Speed, Affordable, Professional Team",
-    "imgUrl": "/images/dynabolt-card.webp"
+    "imgUrls": ["/images/dynabolt/1.webp"],
+    "playSpeed": 4
   },
   {
     "heading": "Brick Cleaning",
     "description": "Restorative, Thorough, Specialized, Surface-safe",
-    "imgUrl": "/images/brick-clean/1.jpg"
+    "imgUrls": ["/images/brick-clean/1.jpg", "/images/brick-clean/2.jpg"],
+    "playSpeed": 4
   },
   {
     "heading": "Construction Frame Mould Removal",
     "description": "Thorough, Safe, Specialized Process",
-    "imgUrl": "/images/construction/2.jpg"
-  },
-  {
-    "heading": "Graffiti Removal",
-    "description": "Fast, Effective, Surface-safe",
-    "imgUrl": "/images/graffiti/1.jpg"
-  },
-  {
-    "heading": "NawKaw, Brick Burn",
-    "description": "Restorative, Precise, Color-matched",
-    "imgUrl": "/images/nawkaw/5.jpg"
-  },
-  {
-    "heading": "End of Lease Cleaning",
-    "description": "Comprehensive, Deep, Guaranteed Clean",
-    "imgUrl": "/images/construction/14.jpg"
+    "imgUrls": [
+      "/images/mould/1.jpg",
+      "/images/mould/2.jpg",
+      "/images/mould/3.jpg",
+      "/images/mould/4.jpg",
+      "/images/mould/5.jpg",
+      "/images/mould/6.jpg",
+      "/images/mould/7.jpg",
+      "/images/mould/8.jpg",
+      "/images/mould/9.jpg",
+      "/images/mould/10.jpg"
+    ],
+    "playSpeed": 4
   },
   {
     "heading": "Efflorescence Stain Removal",
     "description": "Professional, Lasting, Prevents Reoccurrence",
-    "imgUrl": "/images/eff/1.jpg"
+    "imgUrls": [
+      "/images/efflorescence/1.jpg",
+      "/images/efflorescence/2.jpg",
+      "/images/efflorescence/3.jpg",
+      "/images/efflorescence/4.jpg",
+      "/images/efflorescence/5.jpg",
+      "/images/efflorescence/6.jpg",
+      "/images/efflorescence/7.jpg",
+      "/images/efflorescence/8.jpg"
+    ],
+    "playSpeed": 4
+  },
+  {
+    "heading": "Graffiti Removal",
+    "description": "Fast, Effective, Surface-safe",
+    "imgUrls": ["/images/graffiti/1.jpg", "/images/graffiti/2.jpg"],
+    "playSpeed": 4
+  },
+  {
+    "heading": "NawKaw, Brick Burn",
+    "description": "Restorative, Precise, Color-matched",
+    "imgUrls": [
+      "/images/nawkaw/1.jpg",
+      "/images/nawkaw/2.jpg",
+      "/images/nawkaw/3.jpg",
+      "/images/nawkaw/4.jpg",
+      "/images/nawkaw/5.jpg",
+      "/images/nawkaw/6.jpg",
+      "/images/nawkaw/7.jpg",
+      "/images/nawkaw/8.jpg",
+      "/images/nawkaw/9.jpg",
+      "/images/nawkaw/10.jpg"
+    ],
+    "playSpeed": 4
+  },
+  {
+    "heading": "End of Lease Cleaning",
+    "description": "Comprehensive, Deep, Guaranteed Clean",
+    "imgUrls": ["/images/concrete/1.jpg"],
+    "playSpeed": 4
   },
   {
     "heading": "Concrete Surface Cleaning",
     "description": "Powerful, Detailed, Revitalized Finish",
-    "imgUrl": "/images/concrete/3.jpg"
+    "imgUrls": [
+      "/images/concrete/1.jpg",
+      "/images/concrete/2.jpg",
+      "/images/concrete/3.jpg",
+      "/images/concrete/4.jpg",
+      "/images/concrete/5.jpg",
+      "/images/concrete/6.jpg",
+      "/images/concrete/7.jpg",
+      "/images/concrete/8.jpg",
+      "/images/concrete/9.jpg",
+      "/images/concrete/10.jpg",
+      "/images/concrete/11.jpg",
+      "/images/concrete/12.jpg"
+    ],
+    "playSpeed": 4
   }
 ]

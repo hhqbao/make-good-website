@@ -1,5 +1,6 @@
 export class OurService {
   heading: string;
   description: string;
-  imgUrl: string;
+  imgUrls: string[] = [];
+  playSpeed: number = 1.5;
 }

@@ -17,7 +17,8 @@
       <ul class="services-list">
         <li class="services-item" *ngFor="let item of ourServices">
           <app-service-item-card
-            [imgUrl]="item.imgUrl"
+            [imgUrls]="item.imgUrls"
+            [playSpeed]="item.playSpeed"
             [heading]="item.heading"
           >
             {{ item.description }}
